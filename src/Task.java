@@ -32,17 +32,17 @@ public class Task {
     public static void recommendApplicationVersion(int clientOS, int deviceYear){
 
         boolean deviceIsOld = isDeviceOld (deviceYear);
-        System.out.println("Устанновите ");
+        System.out.print("Устанновите ");
         if (deviceIsOld){
-            System.out.println("Lite ");
+            System.out.print("Lite ");
         }
-        System.out.println("версию для ");
+        System.out.print("версию для ");
         if (clientOS == 0) {
-            System.out.println("IOS");
+            System.out.print("IOS ");
         }else if (clientOS == 1){
-            System.out.println("Android");
+            System.out.print("Android ");
         }else{
-            System.out.println("Неверное значение типа ОС");
+            System.out.print("Неверное значение типа ОС ");
         }
 
     }
@@ -83,7 +83,7 @@ public class Task {
         }else if (deliveryDistance >100) {
             return "Не возможно расчитать срок доставки";
         }
-        return "Потребуется дней " + deliveryDays;
+        return "Потребуется " + deliveryDays + " дня";
 
     }
 
